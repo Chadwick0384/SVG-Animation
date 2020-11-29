@@ -1,0 +1,58 @@
+#Left {
+  animation: typing 3s ease infinite;
+  transform-origin: center;
+  animation-direction: alternate-reverse;
+}
+
+#details {
+  animation: sparkle 8s ease-in infinite;
+  transform-origin: center;
+}
+
+#torso {
+  animation: lean 3s ease infinite;
+  transform-origin: center;
+  animation-direction: alternate-reverse;
+}
+
+#head {
+  animation: lean 3s ease infinite;
+  transform-origin: center;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes turn {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(11deg);
+  }
+}
+
+@keyframes sparkle {
+  from {
+    transform: scale(0.3);
+  }
+  to {
+    transform: width(1.5);
+  }
+}
+
+@keyframes lean {
+  from {
+    transform: rotateZ(1deg);
+  }
+  to {
+    transform: rotateZ(-5.5deg);
+  }
+}
+
+@keyframes typing {
+  from {
+    transform: rotateZ(5deg);
+  }
+  to {
+    transform: rotateZ(-16.5deg);
+  }
+}
